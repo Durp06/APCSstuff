@@ -4,6 +4,7 @@ public class Array_OddSum {
 		Scanner keyboard = new Scanner (System.in);
 		int[] num =new int[10];
 		int finalNumber = 0;
+		int F = 0;
 	
 	
 	for (int i=0; i<num.length; i++) {
