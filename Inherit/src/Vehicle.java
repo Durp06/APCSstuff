@@ -1,4 +1,4 @@
-public class Vehicle {
+public class Vehicle implements Comparable<Vehicle> { //implimenting an interface
     private String model = "";
     private String make = "";
     private int year = 0;
@@ -31,7 +31,7 @@ public void setYear(int year){
     this.year=year;
 }
 
-public int returnYear(){
+public int getYear(){
     return year;
 }
 
@@ -41,5 +41,15 @@ public String getMake(){
 
 public String getModel(){
     return model;
+}
+
+public int compareTo(Vehicle b){
+    if (year==b.getYear())
+        return 0;
+    else if(year < b.getYear())
+        return -1;
+    else
+        return 1;
+    
 }
 }
