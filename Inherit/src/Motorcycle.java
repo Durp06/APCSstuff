@@ -11,6 +11,6 @@ public class Motorcycle extends Vehicle {
     }
 
     public String toString(){
-        return super.toString()+ ", " + cc;
+        return super.toString()+ ", " + cc; //only goes up one level of inheritance
     }
 }
