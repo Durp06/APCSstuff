@@ -14,15 +14,15 @@ public class Clock {
 
     public int getMinutes(){
         String time =  java.time.LocalTime.now().toString();
-        int minutes = Integer.parseInt(time.substring(4, 6));
-        return minutes;
+        return Integer.parseInt(time.substring(3, 5));
+
     }
 
     public boolean isWrapped(){
         String time = java.time.LocalTime.now().toString();
         boolean wrap = false;
         int hours = Integer.parseInt(time.substring(0, 2));
-        if(hours>12){
+        if(hours>12){   
             wrap=true;
         }
         return wrap;
