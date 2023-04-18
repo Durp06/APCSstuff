@@ -15,7 +15,7 @@ public class Clock {
     public int getMinutes(){
         String time =  java.time.LocalTime.now().toString();
         return Integer.parseInt(time.substring(3, 5));
-
+        
     }
 
     public boolean isWrapped(){
